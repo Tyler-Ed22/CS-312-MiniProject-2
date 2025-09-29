@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Personalized Joke App</title>
+  <title>Your Joke of the Day</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <h1>😂 Personalized Joke Generator</h1>
-  <form action="/joke" method="POST">
-    <label for="name">Enter your name:</label>
-    <input type="text" name="name" id="name" placeholder="e.g. Tyler" required>
-    <button type="submit">Get Joke of the Day</button>
-  </form>
+  <h1>Hello, <%= name %></h1>
+  <h2>Here is your joke of the day:</h2>
+  <p><%= joke %></p>
+
+  <a href="/">Get Another Joke</a>
 </body>
 </html>
